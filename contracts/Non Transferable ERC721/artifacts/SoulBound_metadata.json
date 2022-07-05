@@ -1,0 +1,292 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Attest",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Revoke",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "count",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_issuee",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_uri",
+						"type": "string"
+					}
+				],
+				"name": "issue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerOf",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenURI",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"burn(uint256)": {
+					"details": "Must emit a `event Revoke` with the `address _to` field pointing to  the zero address.",
+					"params": {
+						"_tokenId": "The identifier for an ABT"
+					}
+				},
+				"name()": {
+					"details": "Returns the token collection name."
+				},
+				"supportsInterface(bytes4)": {
+					"details": "See {IERC165-supportsInterface}."
+				},
+				"symbol()": {
+					"details": "Returns the token collection symbol."
+				},
+				"tokenURI(uint256)": {
+					"details": "Returns the Uniform Resource Identifier (URI) for `tokenId` token."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"burn(uint256)": {
+					"notice": "Destroys `tokenId`. At any time, an ABT receiver must be able to  disassociate themselves from an ABT publicly through calling this  function."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Non Transferable ERC721/SoulBound.sol": "SoulBound"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+			"keccak256": "0xd10975de010d89fd1c78dc5e8a9a7e7f496198085c151648f20cba166b32582b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fb0048dee081f6fffa5f74afc3fb328483c2a30504e94a0ddd2a5114d731ec4d",
+				"dweb:/ipfs/QmZptt1nmYoA5SgjwnSgWqgUSDgm4q52Yos3xhnMv3MV43"
+			]
+		},
+		"@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+			"keccak256": "0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f",
+				"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
+			]
+		},
+		"contracts/Non Transferable ERC721/ERC4973.sol": {
+			"keccak256": "0x83dba728add7ad67906aae9b2af3b1d8bb8d4c3712317b623bf124c80ffb8936",
+			"license": "CC0-1.0",
+			"urls": [
+				"bzz-raw://d5b3cd356f92fdb07b240735efdc61f7086a43f66f33b8901306a4871249c416",
+				"dweb:/ipfs/QmXQUnReAbfm5F2NkukS3eDXBQXVDnsna8a81zsmUYHsDm"
+			]
+		},
+		"contracts/Non Transferable ERC721/IERC4973.sol": {
+			"keccak256": "0xd822669361f395ae1b9ae8b37f31b5fdf9f908eace3d8a8a04bf845e6180682d",
+			"license": "CC0-1.0",
+			"urls": [
+				"bzz-raw://c71d4b6f068f712a88cfef7ff1b1430017f8a747ad0c1c74a2cdf4aae06eef4f",
+				"dweb:/ipfs/QmXsU433M2sB3GKEBFToZ3xVLHniyEmT7wRm5CFwzepsVY"
+			]
+		},
+		"contracts/Non Transferable ERC721/IERC721Metadata.sol": {
+			"keccak256": "0xf4f2af1277bc6f948191c72b733b74ca9e062e99abccc01cbd89c13a72f185b5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2d6a4a69d536e3b8a18b6bdc6c991caa4bbd001ce6ec9263da277c3dd44cb9a6",
+				"dweb:/ipfs/QmZuoQyQnPW2nN7HXPVubwm9r5AGHMhHKHNRc2quPZJnqv"
+			]
+		},
+		"contracts/Non Transferable ERC721/SoulBound.sol": {
+			"keccak256": "0xa67d1f334ec0607dd3ca467eb59525a06934f5873d5680118c942c0633154981",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4c3836ae06a3c29e4558be8c2ba0cf4f19d43c8c5aca187f70f62310e13e4c44",
+				"dweb:/ipfs/QmZNmPwbDMt1SEKnadtJBvGGP2kwKreXQNQVEPw1ztT2i6"
+			]
+		}
+	},
+	"version": 1
+}
