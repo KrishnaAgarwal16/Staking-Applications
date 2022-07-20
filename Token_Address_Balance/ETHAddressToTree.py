@@ -102,7 +102,7 @@ def get_transactions(address,depth):
 
 
 if __name__ == "__main__":
-    address = "0x5b3256965e7C3cF26E11FCAf296DfC8807C01073"
+    address = "0x5b3256965e7C3cF26E11FCAf296DfC8807C01073".lower()
     depth = 2
 
         #initial_list = get_transactions(address)
